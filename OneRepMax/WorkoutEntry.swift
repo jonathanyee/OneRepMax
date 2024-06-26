@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct WorkoutEntry {
+struct WorkoutEntry: Equatable {
     let date: Date
     let exercise: String
     let reps: Int
