@@ -106,16 +106,13 @@
 		236E176B2C2BC53C0005817E /* OneRepMax */ = {
 			isa = PBXGroup;
 			children = (
-				236E17962C2BC5C10005817E /* workoutData.txt */,
 				236E176C2C2BC53C0005817E /* OneRepMaxApp.swift */,
-				236E176E2C2BC53C0005817E /* WorkoutListView.swift */,
-				236E17702C2BC53D0005817E /* Assets.xcassets */,
-				236E17722C2BC53D0005817E /* Preview Content */,
-				236E17982C2BC62E0005817E /* WorkoutEntry.swift */,
 				236E179A2C2BC6B50005817E /* WorkoutParser.swift */,
-				236E179C2C2BCEED0005817E /* WorkoutListViewModel.swift */,
-				236E179E2C2BD0C80005817E /* Workout.swift */,
-				23F5F8A82C2BD62200614CD4 /* WorkoutRowView.swift */,
+				236E17962C2BC5C10005817E /* workoutData.txt */,
+				236E17702C2BC53D0005817E /* Assets.xcassets */,
+				23F5F8AA2C2BDCB400614CD4 /* Models */,
+				236E17722C2BC53D0005817E /* Preview Content */,
+				23F5F8AB2C2BDCBC00614CD4 /* Views */,
 			);
 			path = OneRepMax;
 			sourceTree = "<group>";
@@ -143,6 +140,33 @@
 				236E17892C2BC53D0005817E /* OneRepMaxUITestsLaunchTests.swift */,
 			);
 			path = OneRepMaxUITests;
+			sourceTree = "<group>";
+		};
+		237309A62C2BDD1B004C5EAC /* WorkoutList */ = {
+			isa = PBXGroup;
+			children = (
+				23F5F8A82C2BD62200614CD4 /* WorkoutRowView.swift */,
+				236E176E2C2BC53C0005817E /* WorkoutListView.swift */,
+				236E179C2C2BCEED0005817E /* WorkoutListViewModel.swift */,
+			);
+			path = WorkoutList;
+			sourceTree = "<group>";
+		};
+		23F5F8AA2C2BDCB400614CD4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				236E179E2C2BD0C80005817E /* Workout.swift */,
+				236E17982C2BC62E0005817E /* WorkoutEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		23F5F8AB2C2BDCBC00614CD4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				237309A62C2BDD1B004C5EAC /* WorkoutList */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

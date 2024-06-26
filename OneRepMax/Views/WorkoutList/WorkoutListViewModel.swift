@@ -23,6 +23,17 @@ class WorkoutListViewModel {
             return
         }
         
+//        for entry in entries {
+//            let exercise = entry.exercise
+//            
+//            if !exerciseNames.contains(exercise) {
+//                exerciseNames.insert(exercise)
+//                groups.append(WorkoutGroup(entries: [entry], exercise: exercise, oneRepMax: 0)) // TODO one rep max
+//            } else {
+//                groups.first(where: { $0.exercise == exercise })?.entries.append(entry)
+//            }
+//        }
+        
         for entry in entries {
             exerciseNames.insert(entry.exercise)
         }
