@@ -16,6 +16,11 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear {
+            let parser = WorkoutParser()
+            let entries = parser.parse()
+            print(entries)
+        }
     }
 }
 
