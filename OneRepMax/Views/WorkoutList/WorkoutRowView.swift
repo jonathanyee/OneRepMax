@@ -15,17 +15,19 @@ struct WorkoutRowView: View {
             VStack(alignment: .leading) {
                 Text(workout.exercise)
                     .font(.title)
-                Text("One Rep Max * lbs")
+                Text("One Rep Max • lbs")
             }
             
             Spacer()
             
-            Text("\(workout.oneRepMax)")
-                .font(.title)
+            if let oneRepMax = workout.oneRepMax {
+                Text("\(oneRepMax)")
+                    .font(.title)
+            }
         }
     }
 }
 
 #Preview {
-    WorkoutRowView(workout: .init(entries: [], exercise: "Deadlift", oneRepMax: 100))
+    WorkoutRowView(workout: .init(entries: [], exercise: "Deadlift"))
 }

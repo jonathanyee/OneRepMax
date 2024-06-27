@@ -40,7 +40,7 @@ class WorkoutListViewModel {
         
         for exercise in exerciseNames {
             let exercises = entries.filter( { $0.exercise == exercise })
-            let workout = Workout(entries: exercises, exercise: exercise, oneRepMax: 0) // TODO
+            let workout = Workout(entries: exercises, exercise: exercise)
             workouts.append(workout)
         }
     }
