@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2322BA902C2CDEC900499241 /* WorkoutEntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2322BA8F2C2CDEC900499241 /* WorkoutEntryTests.swift */; };
 		236E176D2C2BC53C0005817E /* OneRepMaxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236E176C2C2BC53C0005817E /* OneRepMaxApp.swift */; };
 		236E176F2C2BC53C0005817E /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236E176E2C2BC53C0005817E /* WorkoutListView.swift */; };
 		236E17712C2BC53D0005817E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236E17702C2BC53D0005817E /* Assets.xcassets */; };
 		236E17742C2BC53D0005817E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236E17732C2BC53D0005817E /* Preview Assets.xcassets */; };
-		236E177E2C2BC53D0005817E /* OneRepMaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236E177D2C2BC53D0005817E /* OneRepMaxTests.swift */; };
 		236E17882C2BC53D0005817E /* OneRepMaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236E17872C2BC53D0005817E /* OneRepMaxUITests.swift */; };
 		236E178A2C2BC53D0005817E /* OneRepMaxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236E17892C2BC53D0005817E /* OneRepMaxUITestsLaunchTests.swift */; };
 		236E17972C2BC5C10005817E /* workoutData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 236E17962C2BC5C10005817E /* workoutData.txt */; };
@@ -41,13 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2322BA8F2C2CDEC900499241 /* WorkoutEntryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutEntryTests.swift; sourceTree = "<group>"; };
 		236E17692C2BC53C0005817E /* OneRepMax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneRepMax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		236E176C2C2BC53C0005817E /* OneRepMaxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepMaxApp.swift; sourceTree = "<group>"; };
 		236E176E2C2BC53C0005817E /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
 		236E17702C2BC53D0005817E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		236E17732C2BC53D0005817E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		236E17792C2BC53D0005817E /* OneRepMaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneRepMaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		236E177D2C2BC53D0005817E /* OneRepMaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepMaxTests.swift; sourceTree = "<group>"; };
 		236E17832C2BC53D0005817E /* OneRepMaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneRepMaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		236E17872C2BC53D0005817E /* OneRepMaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepMaxUITests.swift; sourceTree = "<group>"; };
 		236E17892C2BC53D0005817E /* OneRepMaxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepMaxUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		236E177C2C2BC53D0005817E /* OneRepMaxTests */ = {
 			isa = PBXGroup;
 			children = (
-				236E177D2C2BC53D0005817E /* OneRepMaxTests.swift */,
+				2322BA8F2C2CDEC900499241 /* WorkoutEntryTests.swift */,
 			);
 			path = OneRepMaxTests;
 			sourceTree = "<group>";
@@ -326,7 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				236E177E2C2BC53D0005817E /* OneRepMaxTests.swift in Sources */,
+				2322BA902C2CDEC900499241 /* WorkoutEntryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

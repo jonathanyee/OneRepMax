@@ -11,7 +11,13 @@ import SwiftUI
 struct OneRepMaxApp: App {
     var body: some Scene {
         WindowGroup {
-            WorkoutListView()
+            if isProduction {
+                WorkoutListView()
+            }
         }
+    }
+    
+    private var isProduction: Bool {
+        NSClassFromString("XCTestCase") == nil
     }
 }
