@@ -7,13 +7,9 @@
 
 import Foundation
 
-struct Workout: Identifiable, Hashable {
+struct Workout: Identifiable {
     let id = UUID()
-    var entries: [WorkoutEntry]
+    let entries: [WorkoutEntry]
     let exercise: String
     let oneRepMaxPR: Int
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
 }
