@@ -20,14 +20,12 @@ struct WorkoutRowView: View {
             
             Spacer()
             
-            if let oneRepMax = workout.oneRepMax {
-                Text("\(oneRepMax)")
-                    .font(.title)
-            }
+            Text("\(workout.oneRepMaxPR)")
+                .font(.title)
         }
     }
 }
 
 #Preview {
-    WorkoutRowView(workout: .init(entries: [], exercise: "Deadlift"))
+    WorkoutRowView(workout: .init(entries: [], exercise: "Deadlift", oneRepMaxPR: 360))
 }

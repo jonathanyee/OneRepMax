@@ -11,10 +11,7 @@ struct Workout: Identifiable, Hashable {
     let id = UUID()
     var entries: [WorkoutEntry]
     let exercise: String
-    
-    var oneRepMax: Int? {
-        entries.last?.oneRepMax
-    }
+    let oneRepMaxPR: Int
     
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)

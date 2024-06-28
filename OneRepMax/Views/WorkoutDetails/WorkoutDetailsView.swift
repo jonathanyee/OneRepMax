@@ -27,8 +27,6 @@ struct WorkoutDetailsView: View {
                     )
                 )
                 .symbol(Circle())
-                
-//                PointMark(x: .value("Date", entry.date), y: .value("1RM", entry.oneRepMax))
             }
             .aspectRatio(1, contentMode: .fit)
             
@@ -39,5 +37,5 @@ struct WorkoutDetailsView: View {
 }
 
 #Preview {
-    WorkoutDetailsView(workout: Workout(entries: [], exercise: "Bench press"))
+    WorkoutDetailsView(workout: Workout(entries: [], exercise: "Bench press", oneRepMaxPR: 360))
 }

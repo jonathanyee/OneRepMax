@@ -11,28 +11,22 @@ import SwiftUI
 
 @Observable
 class WorkoutListViewModel {
-    private let workoutParser = WorkoutParser()
+    @ObservationIgnored
+    private let workoutParser: WorkoutParserProtocol
+    
+    @ObservationIgnored
+    private var exerciseNames = Set<String>()
     
     var workouts = [Workout]()
-    var exerciseNames = Set<String>()
     
-    init() {
-        guard 
+    init(workoutParser: WorkoutParserProtocol) {
+        self.workoutParser = workoutParser
+        
+        guard
             let entries = workoutParser.parse()
         else {
             return
         }
-        
-//        for entry in entries {
-//            let exercise = entry.exercise
-//            
-//            if !exerciseNames.contains(exercise) {
-//                exerciseNames.insert(exercise)
-//                groups.append(WorkoutGroup(entries: [entry], exercise: exercise, oneRepMax: 0)) // TODO one rep max
-//            } else {
-//                groups.first(where: { $0.exercise == exercise })?.entries.append(entry)
-//            }
-//        }
         
         for entry in entries {
             exerciseNames.insert(entry.exercise)
@@ -40,7 +34,8 @@ class WorkoutListViewModel {
         
         for exercise in exerciseNames {
             let exercises = entries.filter( { $0.exercise == exercise })
-            let workout = Workout(entries: exercises, exercise: exercise)
+            let oneRepMax = exercises.map { $0.oneRepMax }.max()
+            let workout = Workout(entries: exercises, exercise: exercise, oneRepMaxPR: oneRepMax ?? 0)
             workouts.append(workout)
         }
     }

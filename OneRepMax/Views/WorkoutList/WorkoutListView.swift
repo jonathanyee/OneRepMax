@@ -17,8 +17,6 @@ struct WorkoutListView: View {
                     WorkoutRowView(workout: workout)
                 }
             }
-            .navigationDestination(for: Workout.self) { group in
-            }
         }
     }
 }
