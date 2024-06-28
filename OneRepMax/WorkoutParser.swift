@@ -7,7 +7,11 @@
 
 import Foundation
 
-class WorkoutParser {
+protocol WorkoutParserProtocol {
+    func parse() -> [WorkoutEntry]?
+}
+
+class WorkoutParser: WorkoutParserProtocol {
     private let filename = "workoutData"
     
     private lazy var dateFormatter: DateFormatter = {
@@ -43,7 +47,7 @@ class WorkoutParser {
         return entries
     }
     
-    func parseColumns(columns: [String]) -> WorkoutEntry? {
+    private func parseColumns(columns: [String]) -> WorkoutEntry? {
         guard
             columns.count == 4
         else {

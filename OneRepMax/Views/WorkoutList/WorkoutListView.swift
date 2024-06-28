@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct WorkoutListView: View {
-    @State var viewModel = WorkoutListViewModel()
+    @State var viewModel = WorkoutListViewModel(workoutParser: WorkoutParser())
     
     var body: some View {
         NavigationStack {
